@@ -1,0 +1,14 @@
+yaml
+workflows:
+  android-workflow:
+    name: Android APK Build
+    max_build_duration: 60
+    scripts:
+      - name: Set up local.properties
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Build Android debug APK
+        script: |
+          gradle assembleDebug
+    artifacts:
+      - "**/build/outputs/**/*.apk"
