@@ -1,0 +1,6 @@
+{
+  "name": "Kakeibo",
+  "description": "Minimalist, offline pocket-notebook personal finance app combining quick Tally-style logging with the traditional Japanese Kakeibo budgeting method and reflections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
